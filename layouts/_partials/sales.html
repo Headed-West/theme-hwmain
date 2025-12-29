@@ -1,0 +1,22 @@
+<!-- Monthly Sales Section -->
+<section id="sales" class="sales-section">
+    <div class="section-header">
+        <span>Current Deals</span>
+        <h2>Monthly Sales & Specials</h2>
+        <p>Exclusive offers for this month only. Stop by to claim!</p>
+    </div>
+
+    <div class="sales-grid">
+        {{ range where (where .Site.RegularPages "Section" "sales") "Draft" false }}
+        <div class="sale-card">
+            <div class="sale-badge">{{ .Params.badge }}</div>
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="sale-img">
+            <div class="sale-details">
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Params.description }}</p>
+                <p class="valid-date">{{ .Params.valid_date }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

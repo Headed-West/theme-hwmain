@@ -1,0 +1,42 @@
+baseURL = 'https://new.theheadedwest.com/'
+languageCode = 'en-US'
+title = 'Headed West'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Monthly Sales'
+    pageRef = '#sales'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Visit Us'
+    pageRef = '#location'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Products'
+    pageRef = '#products'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = '#contact'
+    weight = 50
+
+[params]
+  description = "Denver's Premier Smoke & Head Shop"
+  phone = "(303) 422-2120"
+  address = "4811 S. Broadway, Englewood, CO 80113"
+  hours_mon_sat = "9:00 AM – 9:00 PM"
+  hours_sun = "10:00 AM – 8:00 PM"
+  maps_url = "https://maps.google.com/?q=4811+S+Broadway,+Englewood,+CO+80113"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
