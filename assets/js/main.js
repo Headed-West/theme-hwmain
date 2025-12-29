@@ -1,8 +1,8 @@
 // Mobile Menu Toggle
-function toggleMenu() {
+window.toggleMenu = function() {
   const nav = document.getElementById("navMenu");
   nav.classList.toggle("active");
-}
+};
 
 // Open/Closed Logic
 function checkShopStatus() {
